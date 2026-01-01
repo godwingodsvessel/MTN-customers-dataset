@@ -41,26 +41,7 @@ The project includes both a static web-based dashboard and Python scripts for da
 - **Backend/Analysis**: Python 3 with libraries: Pandas, Matplotlib, Seaborn.
 - **Database**: SQL scripts for data storage and querying.
 
-## Project Structure
 
-```
-MTN customers dataset/
-├── analysis.py              # Python script for data analysis and visualization generation
-├── analysis.sql             # Generated SQL script with schema and data inserts
-├── mtn_customer_churn.csv   # Raw customer data
-├── README.md                # Project documentation
-├── assets/                  # Static assets (images, etc.)
-└── dashboard/
-    ├── index.html           # Main analytics view
-    ├── customers.html       # Detailed customer list
-    ├── reports.html         # Data export center
-    ├── settings.html        # User preferences and theme toggle
-    ├── style.css            # Core styling with semantic theme variables
-    ├── script.js            # Logic for data processing, charts, and interactivity
-    ├── data.js              # Processed data for the dashboard
-    ├── data_summary.json    # Summary statistics
-    └── images/              # Generated visualization images
-```
 
 ## Prerequisites
 
@@ -200,16 +181,14 @@ Contributions are welcome! Please follow these steps:
 
 Please ensure your code follows the existing style and includes appropriate tests/documentation.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
 For questions or feedback, please contact:
 - **Name**: Godwin Akachukwu
-- **Email**: [Your Email]
-- **LinkedIn**: [Your LinkedIn Profile]
+- **Email**: ggodsvessel@gmail.com
+- **LinkedIn**: [godwingodsvessel](www.linkedin.com/in/godwingodsvessel)
 
 ---
 
