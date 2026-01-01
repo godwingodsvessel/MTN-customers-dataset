@@ -188,7 +188,7 @@ Please ensure your code follows the existing style and includes appropriate test
 For questions or feedback, please contact:
 - **Name**: Godwin Akachukwu
 - **Email**: ggodsvessel@gmail.com
-- **LinkedIn**: [godwingodsvessel](www.linkedin.com/in/godwingodsvessel)
+- **LinkedIn**: [linkedin.com/in/godwingodsvessel](www.linkedin.com/in/godwingodsvessel)
 
 ---
 
