@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTN Customer Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="data.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="dashboard-page">
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>MTN Analysis</h2>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html" class="active">Dashboard</a>
+          <a href="customers.html">Customers</a>
+          <a href="reports.html">Reports</a>
+          <a href="settings.html">Settings</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="top-bar">
+          <h1>Overview</h1>
+          <div class="header-right">
+            <div class="filters">
+              <label for="stateFilter">State:</label>
+              <select id="stateFilter">
+                <option value="All">All States</option>
+              </select>
+              
+              <label for="deviceFilter">Device:</label>
+              <select id="deviceFilter">
+                  <option value="All">All Devices</option>
+              </select>
+
+              <label for="planFilter">Plan:</label>
+              <select id="planFilter">
+                  <option value="All">All Plans</option>
+              </select>
+            </div>
+            <div class="user-profile">
+              <span>Admin</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Metrics Cards -->
+        <div class="metrics-grid">
+          <div class="card metric-card">
+            <h3>Total Revenue</h3>
+            <p id="total-revenue" class="metric-value">Loading...</p>
+          </div>
+          <div class="card metric-card">
+            <h3>Total Customers</h3>
+            <p id="total-customers" class="metric-value">Loading...</p>
+          </div>
+          <div class="card metric-card">
+            <h3>Churn Rate</h3>
+            <p id="churn-rate" class="metric-value">Loading...</p>
+          </div>
+          <div class="card metric-card">
+            <h3>Avg Satisfaction</h3>
+            <p id="avg-satisfaction" class="metric-value">Loading...</p>
+          </div>
+          <div class="card metric-card">
+            <h3>ARPU</h3>
+            <p id="arpu" class="metric-value">Loading...</p>
+          </div>
+        </div>
+
+        <!-- Charts Grid -->
+        <div class="charts-grid">
+          <!-- Churn Distribution -->
+          <div class="card chart-card">
+            <h3>Churn Distribution</h3>
+            <div class="chart-container">
+              <canvas id="churnChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Satisfaction by Device -->
+          <div class="card chart-card">
+            <h3>Satisfaction by Device</h3>
+            <div class="chart-container">
+              <canvas id="satisfactionChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Revenue by State (Full Width) -->
+          <div class="card chart-card full-width">
+            <h3>Top 10 States by Revenue</h3>
+            <div class="chart-container">
+              <canvas id="revenueChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Churn Reasons (Full Width) -->
+          <div class="card chart-card full-width">
+            <h3>Reasons for Churn</h3>
+            <div class="chart-container">
+              <canvas id="reasonsChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

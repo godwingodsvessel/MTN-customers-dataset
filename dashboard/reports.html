@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTN Analysis - Reports</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="data.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body id="reports-page">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>MTN Analysis</h2>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="customers.html">Customers</a>
+                <a href="reports.html" class="active">Reports</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <h1>Reports</h1>
+                <div class="header-right">
+                    <div class="user-profile">
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+            <div class="reports-grid">
+                <div class="card report-card">
+                    <h3>Executive Summary</h3>
+                    <p>A high-level overview of performance metrics including total revenue, active customers, and current ARPU.</p>
+                    <button class="btn-mtn" onclick="downloadReport('executive')">Download CSV</button>
+                </div>
+                <div class="card report-card">
+                    <h3>Churn Analysis</h3>
+                    <p>Detailed breakdown of churn reasons, identifying the most common factors leading to customer loss.</p>
+                    <button class="btn-mtn" onclick="downloadReport('churn')">Download CSV</button>
+                </div>
+                <div class="card report-card">
+                    <h3>Revenue Report</h3>
+                    <p>Financial performance grouped by State, providing insights into high-value regions.</p>
+                    <button class="btn-mtn" onclick="downloadReport('revenue')">Download CSV</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

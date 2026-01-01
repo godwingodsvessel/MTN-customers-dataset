@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTN Analysis - Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="data.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body id="settings-page">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>MTN Analysis</h2>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="customers.html">Customers</a>
+                <a href="reports.html">Reports</a>
+                <a href="settings.html" class="active">Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <h1>Settings</h1>
+                <div class="header-right">
+                    <div class="user-profile">
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+            <div class="card settings-card">
+                <h3>System Preferences</h3>
+                <div class="setting-item">
+                    <label>Date Format</label>
+                    <select>
+                        <option>DD/MM/YYYY</option>
+                        <option>MM/DD/YYYY</option>
+                        <option>YYYY-MM-DD</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label>Notifications</label>
+                     <input type="checkbox" checked> Enable Dashboard Alerts
+                </div>
+                 <div class="setting-item">
+                    <label>Admin Profile</label>
+                     <p>Current User: <strong>Admin</strong></p>
+                     <p>Role: <strong>Super User</strong></p>
+                </div>
+                <div class="setting-item">
+                    <label>Theme</label>
+                    <select id="themeSelector">
+                        <option value="dark">MTN Dark (Default)</option>
+                        <option value="light">MTN Light</option>
+                    </select>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
